@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+    color: black;
+    width: 400px;
+    align-items: flex-end;
+}
+
+.form input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form input:hover,
+.form input:focus {
+    outline: 1px solid rgba(112, 99, 99, 0.597);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.addContact {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #F6F1F1;
+    box-shadow: rgba(47, 49, 50, 0.3) 0px 1px 2px 0px;
+    white-space: nowrap;
+    font-size: 24px;
+
+
+}
+
+.addContact:active {
+    transform: translateY(4px);
+}
+
+.addContact:hover {
+    background-color: #f4e6e6;
+
+}

@@ -1,0 +1,59 @@
+li {
+    display: inline-flex;
+    flex-direction: column; 
+    color: black;
+    height: min-content;
+    font-size: 24px;
+    list-style: none;
+    gap: 12px;
+    padding: 30px;
+    position: relative;
+ 
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 16px;
+    align-items: first baseline;
+    font-weight: 700;
+    text-transform: uppercase;
+    gap: 15px;
+}
+
+.value {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.button {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(82, 82, 82, 0.3) 0px 1px 2px 0px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-image: url(https://img.icons8.com/?size=512&id=VntZK7oiCJSH&format=png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: 1.5px 1.5px;
+
+    width: 20px;
+    height: 20px;
+}
+
+.button:active {
+    background-color: #edfeff00;
+}
+
+.button:hover {
+    background-color: #ece9e9aa;
+    color: rgb(100, 100, 100);
+}
