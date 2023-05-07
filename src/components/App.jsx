@@ -24,11 +24,24 @@ export class App extends Component {
     }));
   };
   addContact = data => {
-    const contact = { id: shortid.generate(), ...data };
-    this.setState(({ contacts }) => ({
-      contacts: [contact, ...contacts],
-    }));
-  };
+  const { name, number } = data;
+  const existingContact = this.state.contacts.find(
+    contact => contact.name.toLowerCase() === name.toLowerCase() ||
+                contact.number === number
+  );
+
+  if (existingContact) {
+    alert(`${name} is already in contacts`);
+    return;
+  }
+
+  const contact = { id: shortid.generate(), name, number };
+  this.setState(({ contacts }) => ({
+    contacts: [contact, ...contacts],
+  }));
+};
+
+  
   changeFilter = e => {
     this.setState({ filter: e.currentTarget.value });
   };
